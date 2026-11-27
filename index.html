@@ -1,1 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R-EVOLUCIÓN — Non-Violent Artivism & Performing Arts Collective</title>
+  <meta name="description" content="R-Evolución is a Barcelona-based multidisciplinary collective and cultural association dedicated to non-violent artivism, performative arts, and Human Rights." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <!-- STICKY HEADER (NO SOCIAL ICONS) -->
+  <header class="site-header">
+    <a href="#home" class="brand" data-route="home">
+      <span class="status-dot"></span>R-EVOLUCIÓN
+    </a>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <a href="#manifesto" data-route="manifesto" class="nav-link">MANIFESTO</a>
+      <a href="#projects" data-route="projects" class="nav-link">PROJECTS</a>
+      <a href="#collective" data-route="collective" class="nav-link">COLLECTIVE</a>
+      <a href="#partners" data-route="partners" class="nav-link">PARTNERS</a>
+      <a href="#contact" data-route="contact" class="nav-link">CONTACT</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">[ MENU ]</button>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#manifesto" data-route="manifesto" class="mobile-link">01. MANIFESTO</a>
+    <a href="#projects" data-route="projects" class="mobile-link">02. PROJECTS</a>
+    <a href="#collective" data-route="collective" class="mobile-link">03. COLLECTIVE</a>
+    <a href="#partners" data-route="partners" class="mobile-link">04. PARTNERS</a>
+    <a href="#contact" data-route="contact" class="mobile-link">05. CONTACT</a>
+  </div>
+
+  <main id="app-root">
+
+    <!-- ==================== VIEW 0: HOME ==================== -->
+    <section id="view-home" class="view active">
+      <!-- ABOVE THE FOLD: 5S LOOP + GLITCH -->
+      <div class="hero-stage">
+        <div class="video-placeholder-grid"></div>
+        <!-- CLINMEDIA: Replace this block with <video autoplay muted loop playsinline poster="assets/home-poster.webp"><source src="assets/home-loop.webm" type="video/webm"></video> -->
+        <div class="hero-hud-top">
+          <span>BARCELONA // EU NETWORK</span>
+          <span id="loopCounter">LOOP 00:01 / 00:05 [GLITCH_SYNC]</span>
+        </div>
+
+        <div class="hero-center">
+          <p class="mono-tag">[ MEDIA SLOT: 1920x1080 WEBM LOOP — 5s SILENT + GLITCH AT 00:05 ]</p>
+          <h1 class="hero-title glitch-target" data-text="R-EVOLUCIÓN">R-EVOLUCIÓN</h1>
+          <p class="hero-subtitle">POETIC TERRORISM // NON-VIOLENT ARTIVISM // HUMAN RIGHTS</p>
+        </div>
+
+        <div class="hero-hud-bottom">
+          <span>SCROLL TO READ MANIFESTO ↓</span>
+          <span>REG. CATALUNYA Nº 74566</span>
+        </div>
+      </div>
+
+      <!-- HOME SCROLL: CONDENSED MANIFESTO -->
+      <div class="container section-block border-bottom">
+        <div class="editorial-narrow">
+          <div class="mono-kicker">00 // STATEMENT</div>
+          <p class="lead-paragraph">
+            <strong>R-Evolución</strong> is a multidisciplinary collective and cultural association dedicated to non-violent artivism, performative arts, and all forms of body, visual, and sonic expression. Grounded in the defense of Human Rights, we use live creation—from movement to experimental sound and live AV—as an act of poetic resistance, turning public spaces and stages into laboratories for social transformation, radical empathy, and collective memory.
+          </p>
+          <p class="lead-paragraph">
+            From grassroots workshops to international collaborations, we believe art is neither a commodity nor a privilege, but an urgent, democratic, and necessary tool to rewrite the future.
+          </p>
+          <blockquote class="catalan-quote">
+            “Tot està per fer i tot és possible.”
+            <cite>— Miquel Martí i Pol</cite>
+          </blockquote>
+          <a href="#manifesto" data-route="manifesto" class="btn-sharp">READ THE FULL MANIFESTO →</a>
+        </div>
+      </div>
+
+      <!-- HOME SCROLL: FEATURED ARCHIVE PREVIEW -->
+      <div class="container section-block">
+        <div class="section-header-row">
+          <div>
+            <div class="mono-kicker">02 // SELECTED ARCHIVE & ON TOUR</div>
+            <h2 class="section-heading">WORKS & PROJECTS</h2>
+          </div>
+          <a href="#projects" data-route="projects" class="btn-sharp">VIEW ALL PROJECTS →</a>
+        </div>
+        <div class="grid-3" id="homeFeaturedProjects"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 1: MANIFESTO ==================== -->
+    <section id="view-manifesto" class="view">
+      <div class="container section-block">
+        <div class="editorial-narrow">
+          <div class="mono-kicker">01 // IDEOLOGICAL & ARTISTIC FRAMEWORK</div>
+          <h1 class="page-title">MANIFESTO</h1>
+
+          <p class="lead-paragraph">
+            <strong>R-Evolución</strong> is a multidisciplinary collective and cultural association dedicated to non-violent artivism, performative arts, and all forms of body, visual, and sonic expression. Grounded in the defense of Human Rights, we use live creation—from movement to experimental sound and live AV—as an act of poetic resistance, turning public spaces and stages into laboratories for social transformation, radical empathy, and collective memory.
+          </p>
+          <p class="lead-paragraph">
+            From grassroots workshops to international collaborations, we believe art is neither a commodity nor a privilege, but an urgent, democratic, and necessary tool to rewrite the future.
+          </p>
+
+          <hr class="hairline" />
+
+          <div class="communique-header">
+            COMMUNIQUÉ No. 01 — AGAINST THE ANESTHESIA OF THE SPECTACLE
+          </div>
+
+          <div class="proclamation">
+            <h3>1. WE DECLARE WAR ON INDIFFERENCE.</h3>
+            <p>We inhabit a system designed to manufacture obedience, isolation, and passive consumption. Culture has been domesticated, turned into harmless entertainment for those who can afford a ticket. We reject that truce. Born from the convergence of independent creators, educators, and cultural agitators, <strong>R-Evolución</strong> operates as an open cell of artistic insurgency. We do not ask for a stage; we occupy the crack between art and direct social action.</p>
+          </div>
+
+          <div class="proclamation">
+            <h3>2. OUR WEAPONS ARE NON-VIOLENT AND LIVE.</h3>
+            <p>We practice poetic terrorism: the deliberate disruption of routine through theater, experimental sound, dance, capoeira, photography, short film, and live audiovisuals. Where borders divide and fear paralyzes, we deploy collective creation in real time. We disarm the spectacle by making the audience an accomplice, not a spectator.</p>
+          </div>
+
+          <div class="proclamation">
+            <h3>3. EMANCIPATION THROUGH COLLECTIVE PRACTICE.</h3>
+            <p>We exist to arm emerging artists and young people with critical consciousness, voice, and agency. Through grassroots workshops, creative laboratories, and non-formal education, we dismantle the wall between creator and citizen. Every rehearsal, every debate, and every street intervention is a rehearsal for self-determination and community power.</p>
+          </div>
+
+          <div class="proclamation">
+            <h3>4. OUR NON-NEGOTIABLE FRONT LINES.</h3>
+            <p>We organize, create, and resist across local and European borders under four irrevocable principles:</p>
+            <ul class="manifesto-list">
+              <li><strong>HUMAN RIGHTS AS FRONT-LINE DEFENSE:</strong> Dignity is not negotiable. Every action stands against exclusion, censorship, and structural violence.</li>
+              <li><strong>RADICAL EQUALITY & INTERSECTIONALITY:</strong> No liberation is complete while patriarchy and inequality persist—neither on the streets nor behind the scenes.</li>
+              <li><strong>ECOLOGICAL URGENCY:</strong> There is no art on a dead planet. We practice and demand sustainable, conscious cultural production.</li>
+              <li><strong>TRANSNATIONAL SOLIDARITY:</strong> Against the rise of walls and isolationism, we build alliances with collectives, grassroots movements, and institutions across Europe to prove that organized creativity cannot be contained.</li>
+            </ul>
+          </div>
+
+          <div class="proclamation">
+            <h3>5. NOTHING IS WRITTEN IN STONE.</h3>
+            <p>Every hegemonic narrative can be hacked. Every silenced body can reclaim the space.</p>
+          </div>
+
+          <blockquote class="catalan-quote isolated-signature">
+            “Tot està per fer i tot és possible.”
+            <span class="quote-translation">(Everything remains to be done and everything is possible.)</span>
+            <cite>— Miquel Martí i Pol</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: PROJECTS ==================== -->
+    <section id="view-projects" class="view">
+      <div class="container section-block">
+        <div class="section-header-row">
+          <div>
+            <div class="mono-kicker">02 // LIVING ARCHIVE & PROGRAMMING</div>
+            <h1 class="page-title">WORKS & PROJECTS</h1>
+          </div>
+          <div class="filter-bar" id="projectFilters">
+            <button class="filter-btn active" data-filter="ALL">ALL [04]</button>
+            <button class="filter-btn" data-filter="ON TOUR">UPCOMING / ON TOUR</button>
+            <button class="filter-btn" data-filter="EUROPEAN">EUROPEAN PROJECTS</button>
+            <button class="filter-btn" data-filter="ARCHIVE">ARCHIVE</button>
+          </div>
+        </div>
+
+        <div class="projects-list" id="projectsContainer"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: COLLECTIVE ==================== -->
+    <section id="view-collective" class="view">
+      <div class="container section-block">
+        <div class="section-header-row">
+          <div>
+            <div class="mono-kicker">03 // ARTISTS, CREATORS & COORDINATION</div>
+            <h1 class="page-title">THE COLLECTIVE</h1>
+          </div>
+          <p class="mono-note">SELECT A MEMBER TO VIEW PROFILE & BOOKING</p>
+        </div>
+
+        <div class="collective-grid" id="collectiveGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3B: MEMBER DETAIL ==================== -->
+    <section id="view-member" class="view">
+      <div class="container section-block">
+        <a href="#collective" data-route="collective" class="back-link">← BACK TO COLLECTIVE DIRECTORY</a>
+        <div id="memberDetailContainer"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: PARTNERS ==================== -->
+    <section id="view-partners" class="view">
+      <div class="container section-block">
+        <div class="section-header-row">
+          <div>
+            <div class="mono-kicker">04 // TRANSNATIONAL ALLIANCES & INSTITUTIONS</div>
+            <h1 class="page-title">NETWORK & PARTNERS</h1>
+          </div>
+          <!-- CLINMEDIA: Link this button to the uploaded Institutional Dossier PDF in Media Library -->
+          <a href="#contact" data-route="contact" class="btn-sharp btn-accent">REQUEST INSTITUTIONAL DOSSIER (PDF) ↓</a>
+        </div>
+
+        <p class="lead-paragraph max-700">
+          R-Evolución collaborates with grassroots cultural organizations, municipalities, youth agencies, and European institutions to develop cross-border artistic productions and non-formal education programs.
+        </p>
+
+        <div class="partners-grid">
+          <div class="partner-slot"><span>[ PARTNER LOGO 01 ]</span><small>MONOCHROME SVG / PNG</small></div>
+          <div class="partner-slot"><span>[ PARTNER LOGO 02 ]</span><small>MONOCHROME SVG / PNG</small></div>
+          <div class="partner-slot"><span>[ PARTNER LOGO 03 ]</span><small>MONOCHROME SVG / PNG</small></div>
+          <div class="partner-slot"><span>[ PARTNER LOGO 04 ]</span><small>MONOCHROME SVG / PNG</small></div>
+          <div class="partner-slot"><span>[ PARTNER LOGO 05 ]</span><small>MONOCHROME SVG / PNG</small></div>
+          <div class="partner-slot"><span>[ PARTNER LOGO 06 ]</span><small>MONOCHROME SVG / PNG</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: CONTACT ==================== -->
+    <section id="view-contact" class="view">
+      <div class="container section-block">
+        <div class="grid-2-contact">
+          <div>
+            <div class="mono-kicker">05 // DIRECT CHANNEL & BOOKING</div>
+            <h1 class="page-title">CONTACT</h1>
+            <p class="lead-paragraph">
+              For European project partnerships, artistic programming, workshops, or artist booking inquiries managed through the association.
+            </p>
+
+            <div class="contact-data-block">
+              <div class="data-row">
+                <span class="data-label">EMAIL</span>
+                <a href="mailto:revolucionasociacioncultural@gmail.com">revolucionasociacioncultural@gmail.com</a>
+              </div>
+              <div class="data-row">
+                <span class="data-label">BASE</span>
+                <span>Via Favència, 197, Àtic 1a — 08042 Barcelona, Spain</span>
+              </div>
+              <div class="data-row">
+                <span class="data-label">CHANNELS</span>
+                <span>
+                  <a href="https://instagram.com" target="_blank" rel="noopener">INSTAGRAM ↗</a> · 
+                  <a href="https://youtube.com" target="_blank" rel="noopener">YOUTUBE ↗</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-box">
+            <div class="mono-kicker">SEND DISPATCH</div>
+            <form id="contactForm">
+              <label class="field-label">NAME / ORGANIZATION *
+                <input type="text" id="formName" required placeholder="Enter your name or entity" />
+              </label>
+              <label class="field-label">EMAIL ADDRESS *
+                <input type="email" id="formEmail" required placeholder="name@domain.org" />
+              </label>
+              <label class="field-label">SUBJECT / ARTIST BOOKING *
+                <input type="text" id="formSubject" required placeholder="European Partnership / Project / Artist Inquiry" />
+              </label>
+              <label class="field-label">MESSAGE *
+                <textarea id="formMessage" rows="5" required placeholder="Write your message..."></textarea>
+              </label>
+              <label class="checkbox-row">
+                <input type="checkbox" required />
+                <span>I have read and accept the <a href="#legal" data-route="legal">Privacy Policy</a> (GDPR).</span>
+              </label>
+              <button type="submit" class="btn-sharp btn-full">TRANSMIT MESSAGE →</button>
+              <p id="formFeedback" class="mono-feedback"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 6: LEGAL ==================== -->
+    <section id="view-legal" class="view">
+      <div class="container section-block">
+        <div class="editorial-narrow legal-doc">
+          <div class="mono-kicker">06 // COMPLIANCE & DATA PROTECTION</div>
+          <h1 class="page-title">LEGAL NOTICE & PRIVACY</h1>
+
+          <h2>1. LEGAL NOTICE (LSSI-CE COMPLIANCE)</h2>
+          <p>In compliance with Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI-CE), users are informed that this website is owned by:</p>
+          <ul>
+            <li><strong>Entity Name:</strong> Associació Cultural R-Evolución (Asociación Cultural R-Evolución)</li>
+            <li><strong>Tax ID (CIF/NIF):</strong> G16439754</li>
+            <li><strong>Registered Address:</strong> Via Favència, 197, Àtic 1a, 08042 Barcelona, Spain</li>
+            <li><strong>Registration Details:</strong> Registered in the <em>Registre d'Entitats de la Generalitat de Catalunya</em> (Departament de Justícia, Drets i Memòria) under number <strong>74566</strong> (registration date: 05/02/2024).</li>
+            <li><strong>Contact Email:</strong> revolucionasociacioncultural@gmail.com</li>
+          </ul>
+          <p><strong>Intellectual Property:</strong> All content on this website—including texts, manifestos, photographs, audiovisual works, sound designs, graphic elements, and source code—is the intellectual property of Associació Cultural R-Evolución or its respective creators and is protected under Spanish and international intellectual property laws.</p>
+          <p><strong>Jurisdiction:</strong> This Legal Notice is governed by Spanish law. Any dispute shall be submitted to the Courts and Tribunals of Barcelona, Spain.</p>
+
+          <hr class="hairline" />
+
+          <h2>2. PRIVACY POLICY (GDPR / LOPDGDD)</h2>
+          <p>In accordance with Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 (LOPDGDD), personal data collected through this website will be processed by <strong>Associació Cultural R-Evolución</strong> (CIF G16439754, Via Favència 197, Àtic 1a, 08042 Barcelona) solely to respond to contact inquiries, project proposals, artist booking requests, or newsletter subscriptions based on explicit user consent (Art. 6.1.a GDPR).</p>
+          <p><strong>User Rights:</strong> You may exercise your rights of access, rectification, erasure, restriction, portability
